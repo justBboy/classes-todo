@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <title>Our Todo</title>
 </head>
 
@@ -17,7 +19,7 @@
             <h2>Our Todo List</h2>
         </header>
         <div class="content">
-            <button class="create-btn">Create Todo</button>
+            <button class="create-btn" id="create-btn">Create Todo</button>
             <table class="table">
                 <thead>
                     <tr>
@@ -41,14 +43,25 @@
                         <td>not complete</td>
                     </tr>
                 </tbody>
-                <tbody>
-
-                </tbody>
             </table>
+
         </div>
         <footer class="footer">
             <h2>Made By Us</h2>
         </footer>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <a href="#" class="close" id="close-modal">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+            <form class="modal-form">
+                <input type="text" class="input" id="title-text" placeholder="Enter Title" />
+                <textarea class="input" placeholder="description"></textarea>
+                <input type="text" class="input" id="title-text" placeholder="Start Date" />
+                <button class="submit-btn">Add</button>
+            </form>
+        </div>
     </div>
     <script src="todo.js"></script>
 </body>
